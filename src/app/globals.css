@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --brand-navy: #0b1b3a;
+  --brand-blue: #1d4ed8;
+  --brand-amber: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.katex-like {
+  font-family: "Cambria Math", "Georgia", serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.prose-physics p {
+  margin: 0.5rem 0;
+  line-height: 1.7;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out;
+}
+

@@ -1,0 +1,68 @@
+import type { Misconception } from "@/lib/types";
+
+export const MISCONCEPTIONS: Misconception[] = [
+  {
+    id: "distance-displacement",
+    title: "Distance is the same as Displacement",
+    wrong: "Distance and displacement always give the same number.",
+    right: "Distance is total path length (scalar); displacement is the straight-line change in position with direction (vector). They are only equal for straight-line motion in one constant direction.",
+    explanation: "If you walk 3 laps around a circular track, your distance is huge, but if you end up back at the start, your displacement is zero. Always check whether a question is asking about the path taken or the net change in position.",
+    example: "Walking 400 m around a track and returning to start: distance = 400 m, displacement = 0 m.",
+  },
+  {
+    id: "speed-velocity",
+    title: "Speed is the same as Velocity",
+    wrong: "Speed and velocity are interchangeable terms.",
+    right: "Speed is a scalar (magnitude only); velocity is a vector (magnitude AND direction). An object can have constant speed but changing velocity if its direction changes.",
+    explanation: "A car going around a roundabout at a steady 30 km/h has constant SPEED, but its VELOCITY is constantly changing because its direction is constantly changing — meaning it is accelerating even without speeding up.",
+    example: "Circular motion at constant speed still involves acceleration, because velocity (a vector) is changing direction.",
+  },
+  {
+    id: "mass-weight",
+    title: "Mass is the same as Weight",
+    wrong: "Mass and weight are the same physical quantity, just measured differently.",
+    right: "Mass (kg) is the amount of matter in an object and never changes. Weight (N) is the force of gravity on that mass, and changes depending on the local gravitational field strength.",
+    explanation: "An astronaut's mass is identical on Earth and on the Moon, but their weight on the Moon is about 1/6 of their weight on Earth, because the Moon's gravitational field strength is weaker.",
+    example: "A 60 kg person weighs about 600 N on Earth but only about 100 N on the Moon.",
+  },
+  {
+    id: "zero-force-zero-velocity",
+    title: "Zero Resultant Force Means Zero Velocity",
+    wrong: "If the resultant force on an object is zero, the object must be stationary.",
+    right: "Zero resultant force means zero ACCELERATION (Newton's First Law) — the object continues at whatever constant velocity it already had, which could be zero OR any non-zero constant velocity.",
+    explanation: "A car cruising at a steady 100 km/h on a flat, straight road has a zero resultant force (driving force balances friction and air resistance exactly), yet it is clearly still moving.",
+    example: "An object moving at constant velocity in deep space (no forces at all) keeps moving forever — zero force, but definitely not zero velocity.",
+  },
+  {
+    id: "action-reaction-same-object",
+    title: "Action and Reaction Forces Cancel Each Other Out",
+    wrong: "Newton's Third Law pairs act on the same object, so they cancel out and cause no motion.",
+    right: "Action-reaction pairs always act on two DIFFERENT objects, so they never cancel for any single object's motion analysis. Each force affects only the object it acts on.",
+    explanation: "When you push against a wall, the wall pushes back on YOU (not on itself) with an equal and opposite force. Your push acts on the wall; the wall's push acts on you. These two forces can never cancel because they act on different bodies.",
+    example: "A swimmer pushes water backward (action); the water pushes the swimmer forward (reaction) — the swimmer accelerates because the reaction force acts on them, not because the forces cancel.",
+  },
+  {
+    id: "centripetal-force-extra",
+    title: "Centripetal Force is a Brand New, Separate Force",
+    wrong: "Centripetal force is an additional force that must be added to a free body diagram, alongside gravity, tension, friction, etc.",
+    right: "'Centripetal force' is just the NAME given to the resultant (net) force that happens to point toward the centre of a circular path. It is always provided by one or more real, identifiable forces — never an extra one.",
+    explanation: "When a car turns a corner, friction between the tyres and road IS the centripetal force. When a ball on a string moves in a horizontal circle, tension IS the centripetal force. There is never a separate, additional 'centripetal force' arrow to draw.",
+    example: "For a satellite in orbit, gravity alone provides all the centripetal force needed — nothing else is required.",
+  },
+  {
+    id: "friction-always-opposes-motion",
+    title: "Friction Always Opposes Motion (Not Just Relative Sliding)",
+    wrong: "Friction only ever acts to slow things down or stop them moving.",
+    right: "Friction opposes RELATIVE SLIDING (or the tendency toward it) between two surfaces — it can actually enable or maintain motion in some situations, such as providing forward drive.",
+    explanation: "When you walk, friction between your shoe and the ground pushes you FORWARD (reaction to your foot pushing backward) — without friction, walking would be impossible (like trying to walk on very slippery ice). Friction isn't simply 'anti-motion'; it opposes relative sliding at the contact surface.",
+    example: "A car's driving wheels rely on friction with the road to accelerate forward, not to slow down.",
+  },
+  {
+    id: "heavier-falls-faster",
+    title: "Heavier Objects Always Fall Faster",
+    wrong: "A heavier object always falls to the ground faster than a lighter one.",
+    right: "Ignoring air resistance, ALL objects fall with the same acceleration g, regardless of mass, because although heavier objects have more weight (more force), they also have proportionally more inertia (mass) to accelerate.",
+    explanation: "A feather and a hammer dropped together on the airless Moon hit the ground at exactly the same time (famously demonstrated during Apollo 15). On Earth, air resistance affects light, spread-out objects like feathers far more than dense compact ones like hammers, which is why they normally appear to fall at different rates.",
+    example: "Two identical balls of different mass dropped from the same height, in a vacuum, land simultaneously.",
+  },
+];
